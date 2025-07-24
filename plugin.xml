@@ -3,8 +3,8 @@
         xmlns:android="http://schemas.android.com/apk/res/android">
     <name>Adaptive Icon Plugin</name>
     <platform name="android">
-        <resource-file src="src/android/res/mipmap-anydpi-v26/ic_launcher.xml" target="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" />
-        <resource-file src="src/android/res/drawable/ic_launcher_foreground.png" target="app/src/main/res/drawable/ic_launcher_foreground.png" />
-        <resource-file src="src/android/res/drawable/ic_launcher_background.png" target="app/src/main/res/drawable/ic_launcher_background.png" />
+        <resource-file src="src/android/res/mipmap-anydpi-v26/ic_launcher.xml" target="res/mipmap-anydpi-v26/ic_launcher.xml" />
+        <resource-file src="src/android/res/drawable/ic_launcher_foreground.png" target="res/drawable/ic_launcher_foreground.png" />
+        <resource-file src="src/android/res/drawable/ic_launcher_background.png" target="res/drawable/ic_launcher_background.png" />
     </platform>
 </plugin>
