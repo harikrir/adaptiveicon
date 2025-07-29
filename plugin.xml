@@ -28,18 +28,6 @@
     <clobbers target="window.plugins.flashlight" />
   </js-module>
 
-  <!-- ios -->
-  <platform name="ios">
-
-    <config-file target="config.xml" parent="/*">
-      <feature name="Flashlight">
-        <param name="ios-package" value="Flashlight"/>
-      </feature>
-    </config-file>
-
-    <header-file src="src/ios/Flashlight.h"/>
-    <source-file src="src/ios/Flashlight.m"/>
-  </platform>
 
   <!-- android -->
   <platform name="android">
@@ -60,45 +48,31 @@
 <source-file src="src/res/mipmap-anydpi-v26/ic_launcher.xml" target-dir="app/src/main/res/mipmap-anydpi-v26/"/>
 <source-file src="src/res/mipmap-anydpi-v26/ic_launcher_round.xml" target-dir="app/src/main/res/mipmap-anydpi-v26/"/>
 
-<source-file src="src/res/mipmap-ldpi/icon_background.png" target-dir="app/src/main/res/mipmap-ldpi/"/>
-<source-file src="src/res/mipmap-ldpi/icon_foreground.png" target-dir="app/src/main/res/mipmap-ldpi/"/>
+<source-file src="src/res/mipmap-ldpi/ic_launcher_round.png" target-dir="app/src/main/res/mipmap-ldpi/"/>
+
     
-<source-file src="src/res/mipmap-hdpi/icon_background.png" target-dir="app/src/main/res/mipmap-hdpi/"/>
-<source-file src="src/res/mipmap-hdpi/icon_foreground.png" target-dir="app/src/main/res/mipmap-hdpi/"/>
+<source-file src="src/res/mipmap-hdpi/ic_launcher_round.png" target-dir="app/src/main/res/mipmap-hdpi/"/>
+
 
           
-<source-file src="src/res/mipmap-mdpi/icon_background.png" target-dir="app/src/main/res/mipmap-mdpi/"/>
-<source-file src="src/res/mipmap-mdpi/icon_foreground.png" target-dir="app/src/main/res/mipmap-mdpi/"/>
+<source-file src="src/res/mipmap-mdpi/ic_launcher_round.png" target-dir="app/src/main/res/mipmap-mdpi/"/>
+
 
           
-<source-file src="src/res/mipmap-xhdpi/icon_background.png" target-dir="app/src/main/res/mipmap-xhdpi/"/>
-<source-file src="src/res/mipmap-xhdpi/icon_foreground.png" target-dir="app/src/main/res/mipmap-xhdpi/"/>
+<source-file src="src/res/mipmap-xhdpi/ic_launcher_round.png" target-dir="app/src/main/res/mipmap-xhdpi/"/>
+
 
           
-<source-file src="src/res/mipmap-xxhdpi/icon_background.png" target-dir="app/src/main/res/mipmap-xxhdpi/"/>
-<source-file src="src/res/mipmap-xxhdpi/icon_foreground.png" target-dir="app/src/main/res/mipmap-xxhdpi/"/>
+<source-file src="src/res/mipmap-xxhdpi/ic_launcher_round.png" target-dir="app/src/main/res/mipmap-xxhdpi/"/>
+
 
           
-<source-file src="src/res/mipmap-xxxhdpi/icon_background.png" target-dir="app/src/main/res/mipmap-xxxhdpi/"/>
-<source-file src="src/res/mipmap-xxhdpi/icon_foreground.png" target-dir="app/src/main/res/mipmap-xxxhdpi/"/>
+<source-file src="src/res/mipmap-xxxhdpi/ic_launcher_round.png" target-dir="app/src/main/res/mipmap-xxxhdpi/"/>
+
 
           
   </platform>
 
-  <!-- wp8 -->
-  <platform name="wp8">
-    <config-file target="config.xml" parent="/*">
-      <feature name="Flashlight">
-        <param name="wp-package" value="Flashlight"/>
-      </feature>
-    </config-file>
 
-    <config-file target="Properties/WMAppManifest.xml" parent="/Deployment/App/Capabilities">
-      <Capability Name="ID_CAP_ISV_CAMERA"/>
-      <Capability Name="ID_CAP_MICROPHONE"/>
-    </config-file>
-
-    <source-file src="src/wp8/Flashlight.cs" />
-  </platform>
 
 </plugin>
