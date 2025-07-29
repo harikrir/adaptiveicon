@@ -48,8 +48,7 @@
 <source-file src="src/res/mipmap-anydpi-v26/ic_launcher.xml" target-dir="app/src/main/res/mipmap-anydpi-v26/"/>
 <source-file src="src/res/mipmap-anydpi-v26/ic_launcher_round.xml" target-dir="app/src/main/res/mipmap-anydpi-v26/"/>
 
-<source-file src="src/res/mipmap-ldpi/ic_launcher_background.png" target-dir="app/src/main/res/mipmap-ldpi/"/>
-<source-file src="src/res/mipmap-ldpi/ic_launcher_foreground.png" target-dir="app/src/main/res/mipmap-ldpi/"/>
+
           
 <source-file src="src/res/mipmap-hdpi/ic_launcher_background.png" target-dir="app/src/main/res/mipmap-hdpi/"/>
 <source-file src="src/res/mipmap-hdpi/ic_launcher_foreground.png" target-dir="app/src/main/res/mipmap-hdpi/"/>
