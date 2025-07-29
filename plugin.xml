@@ -1,16 +1,104 @@
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-adaptive-icon-plugin" version="1.0.0">
-<platform name="android">
-<resource-file src="res/mipmap-anydpi-v26/ic_launcher.xml" target="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"/>
-<resource-file src="res/mipmap-anydpi-v26/ic_launcher_round.xml" target="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"/>
-<resource-file src="res/mipmap-hdpi/ic_launcher.png" target="app/src/main/res/mipmap-hdpi/ic_launcher.png"/>
-<resource-file src="res/mipmap-hdpi/ic_launcher_round.png" target="app/src/main/res/mipmap-hdpi/ic_launcher_round.png"/>
-<resource-file src="res/mipmap-mdpi/ic_launcher.png" target="app/src/main/res/mipmap-mdpi/ic_launcher.png"/>
-<resource-file src="res/mipmap-mdpi/ic_launcher_round.png" target="app/src/main/res/mipmap-mdpi/ic_launcher_round.png"/>
-<resource-file src="res/mipmap-xhdpi/ic_launcher.png" target="app/src/main/res/mipmap-xhdpi/ic_launcher.png"/>
-<resource-file src="res/mipmap-xhdpi/ic_launcher_round.png" target="app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"/>
-<resource-file src="res/mipmap-xxhdpi/ic_launcher.png" target="app/src/main/res/mipmap-xxhdpi/ic_launcher.png"/>
-<resource-file src="res/mipmap-xxhdpi/ic_launcher_round.png" target="app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"/>
-<resource-file src="res/mipmap-xxxhdpi/ic_launcher.png" target="app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"/>
-<resource-file src="res/mipmap-xxxhdpi/ic_launcher_round.png" target="app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"/>
-</platform>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="community-cordova-plugin-flashlight"
+        version="3.2.0">
+
+  <name>Flashlight</name>
+
+  <description>
+    This plugin allows you switch the Flashlight / Torch of your device on or off.
+  </description>
+
+  <author>Eddy Verbruggen - @EddyVerbruggen</author>
+
+  <license>MIT</license>
+
+  <keywords>Torch, Flashlight, Flash, Light</keywords>
+
+  <repo>https://github.com/EddyVerbruggen/Flashlight-PhoneGap-Plugin.git</repo>
+
+  <issue>https://github.com/EddyVerbruggen/Flashlight-PhoneGap-Plugin/issues</issue>
+
+  <engines>
+    <engine name="cordova" version=">=3.0.0"/>
+  </engines>
+
+  <js-module src="www/Flashlight.js" name="Flashlight">
+    <clobbers target="window.plugins.flashlight" />
+  </js-module>
+
+  <!-- ios -->
+  <platform name="ios">
+
+    <config-file target="config.xml" parent="/*">
+      <feature name="Flashlight">
+        <param name="ios-package" value="Flashlight"/>
+      </feature>
+    </config-file>
+
+    <header-file src="src/ios/Flashlight.h"/>
+    <source-file src="src/ios/Flashlight.m"/>
+  </platform>
+
+  <!-- android -->
+  <platform name="android">
+
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="Flashlight">
+        <param name="android-package" value="nl.xservices.plugins.Flashlight" />
+      </feature>
+    </config-file>
+
+          <edit-config file="AndroidManifest.xml" mode="merge" target="/manifest/application">
+                  <application android:icon="@mipmap/ic_launcher" 
+                               android:roundIcon="@mipmap/ic_launcher_round"/>
+          </edit-config>
+
+    <source-file src="src/android/nl/xservices/plugins/Flashlight.java" target-dir="src/nl/xservices/plugins"/>
+
+<source-file src="src/res/mipmap-anydpi-v26/ic_launcher.xml" target-dir="app/src/main/res/mipmap-anydpi-v26/"/>
+<source-file src="src/res/mipmap-anydpi-v26/ic_launcher_round.xml" target-dir="app/src/main/res/mipmap-anydpi-v26/"/>
+
+<source-file src="src/res/mipmap-ldpi/icon_background.png" target-dir="app/src/main/res/mipmap-ldpi/"/>
+<source-file src="src/res/mipmap-ldpi/icon_foreground.png" target-dir="app/src/main/res/mipmap-ldpi/"/>
+    
+<source-file src="src/res/mipmap-hdpi/icon_background.png" target-dir="app/src/main/res/mipmap-hdpi/"/>
+<source-file src="src/res/mipmap-hdpi/icon_foreground.png" target-dir="app/src/main/res/mipmap-hdpi/"/>
+
+          
+<source-file src="src/res/mipmap-mdpi/icon_background.png" target-dir="app/src/main/res/mipmap-mdpi/"/>
+<source-file src="src/res/mipmap-mdpi/icon_foreground.png" target-dir="app/src/main/res/mipmap-mdpi/"/>
+
+          
+<source-file src="src/res/mipmap-xhdpi/icon_background.png" target-dir="app/src/main/res/mipmap-xhdpi/"/>
+<source-file src="src/res/mipmap-xhdpi/icon_foreground.png" target-dir="app/src/main/res/mipmap-xhdpi/"/>
+
+          
+<source-file src="src/res/mipmap-xxhdpi/icon_background.png" target-dir="app/src/main/res/mipmap-xxhdpi/"/>
+<source-file src="src/res/mipmap-xxhdpi/icon_foreground.png" target-dir="app/src/main/res/mipmap-xxhdpi/"/>
+
+          
+<source-file src="src/res/mipmap-xxxhdpi/icon_background.png" target-dir="app/src/main/res/mipmap-xxxhdpi/"/>
+<source-file src="src/res/mipmap-xxxhdpi/icon_foreground.png" target-dir="app/src/main/res/mipmap-xxxhdpi/"/>
+
+          
+  </platform>
+
+  <!-- wp8 -->
+  <platform name="wp8">
+    <config-file target="config.xml" parent="/*">
+      <feature name="Flashlight">
+        <param name="wp-package" value="Flashlight"/>
+      </feature>
+    </config-file>
+
+    <config-file target="Properties/WMAppManifest.xml" parent="/Deployment/App/Capabilities">
+      <Capability Name="ID_CAP_ISV_CAMERA"/>
+      <Capability Name="ID_CAP_MICROPHONE"/>
+    </config-file>
+
+    <source-file src="src/wp8/Flashlight.cs" />
+  </platform>
+
 </plugin>
