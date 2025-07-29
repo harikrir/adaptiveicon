@@ -80,7 +80,7 @@
 
           
 <source-file src="src/res/mipmap-xxxhdpi/icon_background.png" target-dir="app/src/main/res/mipmap-xxxhdpi/"/>
-<source-file src="src/res/mipmap-xxxhdpi/icon_foreground.png" target-dir="app/src/main/res/mipmap-xxxhdpi/"/>
+<source-file src="src/res/mipmap-xxhdpi/icon_foreground.png" target-dir="app/src/main/res/mipmap-xxxhdpi/"/>
 
           
   </platform>
