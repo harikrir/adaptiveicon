@@ -21,8 +21,8 @@
   <platform name="android">
 
     <config-file target="res/xml/config.xml" parent="/*">
-      <feature name="Flashlight">
-        <param name="android-package" value="nl.xservices.plugins.Flashlight" />
+      <feature name="adaptiveicon">
+        <param name="android-package" value="nl.xservices.plugins.adaptiveicon" />
       </feature>
     </config-file>
 
@@ -31,7 +31,7 @@
                                android:roundIcon="@mipmap/ic_launcher_round"/>
           </edit-config>
 
-    <source-file src="src/android/nl/xservices/plugins/Flashlight.java" target-dir="src/nl/xservices/plugins"/>
+
 
 <source-file src="src/res/mipmap-anydpi-v26/ic_launcher.xml" target-dir="app/src/main/res/mipmap-anydpi-v26/"/>
 <source-file src="src/res/mipmap-anydpi-v26/ic_launcher_round.xml" target-dir="app/src/main/res/mipmap-anydpi-v26/"/>
