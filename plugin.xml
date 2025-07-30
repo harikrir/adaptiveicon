@@ -1,34 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
-        id="community-cordova-plugin-flashlight"
+        id="community-cordova-plugin-Adaptiveicon"
         version="3.2.0">
 
-  <name>Flashlight</name>
+  <name>AdaptiveIcon</name>
 
   <description>
-    This plugin allows you switch the Flashlight / Torch of your device on or off.
+    This plugin allows you add adaptive icons in android device.
   </description>
 
-  <author>Eddy Verbruggen - @EddyVerbruggen</author>
+  <author>Harikrishnan</author>
 
   <license>MIT</license>
-
-  <keywords>Torch, Flashlight, Flash, Light</keywords>
-
-  <repo>https://github.com/EddyVerbruggen/Flashlight-PhoneGap-Plugin.git</repo>
-
-  <issue>https://github.com/EddyVerbruggen/Flashlight-PhoneGap-Plugin/issues</issue>
 
   <engines>
     <engine name="cordova" version=">=3.0.0"/>
   </engines>
-
-  <js-module src="www/Flashlight.js" name="Flashlight">
-    <clobbers target="window.plugins.flashlight" />
-  </js-module>
-
-
   <!-- android -->
   <platform name="android">
 
